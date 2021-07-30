@@ -1,10 +1,134 @@
 ﻿@page
 @model IndexModel
-@{
-    ViewData["Title"] = "Home page";
-}
+@{ ViewData["Title"] = "Home page"; }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row align-items-center" style="background-color:#F4F2F2">
+                    <div class="col-md-6 paralax-justify-items">
+                        <p> This is just a button </p>
+                        <button class="btn btn-primary">More here</button>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="~/images/DSC_2662.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row align-items-center" style="background-color:#F4F2F2">
+                    <div class="col-md-6 paralax-justify-items">
+                        <p> This is just a button </p>
+                        <button class="btn btn-primary">More here</button>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="~/images/DSC_2622.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row align-items-center" style="background-color:#F4F2F2">
+                    <div class="col-md-6 paralax-justify-items">
+                        <p> This is just a button </p>
+                        <button class="btn btn-primary">More here</button>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="~/images/DSC_2795.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="~/images/DSC_2913.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="col-md-6 paralax-justify-items">
+            <div>
+                <p class="header-font-card">Get An Account</p>
+                <p class="paralax-body-font">Live life on your own terms with our P Current account and enjoy zero charge on transactions, no account maintenance charge, free card delivery to your registered address and 3% per annuminterest on monthly average balance. No need to go to a branch, you can open a P Current account now!</p>
+                <button class="btn paralax-btn-outline-yellow my-2 my-sm-0">Open my Account</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="row" style="background-color: #F4F2F2">
+        <div style="margin:30px">
+            <div class="header-font">
+                <p>Accounts</p>
+            </div>
+            <div class="card-deck paralax-card-deck">
+                <div class="card shadow mb-5 bg-white paralax-rounded-card-edge">
+                    <img src="~/images/pexels-pixabay-50987.png" class="paralax-card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title header-font-card">Current Account</h5>
+                        <p class="card-text paralax-body-font">Do you need help in choosing a Chequing Account? Our array of Current Accounts provides you with just the right account in only a few minutes.</p>
+                        <button class="btn paralax-btn-outline-yellow-reverse my-2 my-sm-0">Learn More<i class="fa fa-arrow-right paralax-i-arrow" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <div class="card shadow mb-5 bg-white paralax-rounded-card-edge">
+                    <img src="~/images/pexels-pixabay-50987.png" class="paralax-card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title header-font-card">Savings Account</h5>
+                        <p class="card-text paralax-body-font">Saving for tomorrow has become much easier with our array of high interest and low charges savings accounts.</p>
+                        <button class="btn paralax-btn-outline-yellow-reverse my-2 my-sm-0">Learn More<i class="fa fa-arrow-right paralax-i-arrow" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <div class="card shadow mb-5 bg-white paralax-rounded-card-edge">
+                    <img src="~/images/pexels-pixabay-50987.png" class="paralax-card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title header-font-card">Fixed Income Account</h5>
+                        <p class="card-text paralax-body-font">To keep you earning on your excess funds, whether in local or foreign currency, the following accounts provide maximum value on your idle funds.</p>
+                        <button class="btn paralax-btn-outline-yellow-reverse my-2 my-sm-0">Learn More<i class="fa fa-arrow-right paralax-i-arrow" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div style="margin-top:30px">
+                <div class="card-deck paralax-card-deck">
+                    <div class="card shadow mb-5 bg-white paralax-rounded-card-edge">
+                        <img src="~/images/pexels-pixabay-50987.png" class="paralax-card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title header-font-card">Cards</h5>
+                            <p class="card-text paralax-body-font">We offer the Verve Debit cards, pre-funded MasterCard, Debit MasterCard and Credit Cards.</p>
+                            <button class="btn paralax-btn-outline-yellow-reverse my-2 my-sm-0">Learn More<i class="fa fa-arrow-right paralax-i-arrow" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="card shadow mb-5 bg-white paralax-rounded-card-edge">
+                        <img src="~/images/pexels-pixabay-50987.png" class="paralax-card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title header-font-card">Personal Loans</h5>
+                            <p class="card-text paralax-body-font">Our personal loans provide you with the right financing for your personal needs while guaranteeing you all the security you are looking for.</p>
+                            <button class="btn align-self-end paralax-btn-outline-yellow-reverse my-2 my-sm-0">Learn More<i class="fa fa-arrow-right paralax-i-arrow" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="card shadow mb-5 bg-white paralax-rounded-card-edge">
+                        <img src="~/images/pexels-pixabay-50987.png" class="paralax-card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title header-font-card">Business Banking Products</h5>
+                            <p class="card-text paralax-body-font">Experience the advantages of being with Nigeria’s truly Digital Bank, and take advantage of…</p>
+                            <button class="btn align-self-end paralax-btn-outline-yellow-reverse my-2 my-sm-0">Learn More<i class="fa fa-arrow-right paralax-i-arrow" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+
+        </div>
 </div>

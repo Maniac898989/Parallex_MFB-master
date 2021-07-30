@@ -1,0 +1,156 @@
+﻿body {
+}
+
+.paralax-nav-text {
+    color: #da9c04 !important;
+}
+
+.paralax-nav-bar {
+    background-color: #1F007D;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+a.paralax-navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+    color: #da9c04;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.paralex-navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.paralax-navbar-nav {
+    display: -ms-flexbox;
+    display: inline-block;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.paralax-navbar-nav .paralax-nav-link {
+    display: -ms-flexbox;
+    display: inline-block;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.paralax-btn-outline-transparent {
+    color: #FFF;
+    border-color: #FFF;
+}
+
+.paralax-btn-outline-yellow {
+    color: #FFF;
+    border-color: #da9c04;
+    background-color: #da9c04;
+}
+
+.paralax-btn-outline-yellow-reverse {
+    color: #da9c04;
+    border-color: #da9c04;
+    background-color: #FFF;
+}
+
+
+.paralax-justify-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:50px;
+}
+
+.paralax-i-arrow{
+    margin-left:9px;
+    margin-right:9px
+}
+
+.header-font {
+    font-size: 40px;
+    font-family: "CeraBold";
+    margin-left:54px;
+}
+
+.header-font-card {
+    font-size: 25px;
+    font-family: "CeraBold";
+    
+}
+
+.paralax-body-font {
+    font-size: 1rem;
+    font-family: "CeraRegular";
+}
+
+.paralax-nav-barlink-font {
+    font-size: 1rem;
+    font-family: "CeraMedium";
+    
+}
+
+@font-face {
+    font-family: 'CeraBold';
+    src: url('../../../../../fonts/cera_pro_bold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'CeraRegular';
+    src: url('../../../../../fonts/cera_pro_regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'CeraMedium';
+    src: url('../../../../../fonts/cera_pro_medium-webfont.woff') format('woff');
+}
+
+
+.paralax-card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(0.7rem - 1px);
+    border-top-right-radius: calc(0.7rem - 1px);
+}
+
+.paralax-rounded-card-edge{
+    border-radius: 0.7rem !important;
+}
+
+.paralax-card-deck{
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+a.paralax-nav-barlink-font {
+    color: #1F007D;
+}
+
+@media (min-width: 576px) {
+    .paralax-card-deck {
+        flex-flow:wrap;
+        flex-direction: row;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+}
