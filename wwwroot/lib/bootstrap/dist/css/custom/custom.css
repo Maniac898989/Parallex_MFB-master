@@ -1,4 +1,78 @@
-﻿body {
+﻿
+@font-face {
+    font-family: 'CeraBold';
+    src: url('../../../../../fonts/cera_pro_bold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'CeraRegular';
+    src: url('../../../../../fonts/cera_pro_regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'CeraMedium';
+    src: url('../../../../../fonts/cera_pro_medium-webfont.woff') format('woff');
+}
+
+:root {
+    --gold: #DA9C04;
+    --blue: #1F007D;
+}
+
+.text-gold {
+    color: var(--gold);
+}
+
+.text-blue {
+    color: var(--blue);
+}
+
+.bg-gold {
+    background-color: var(--gold);
+    color: white;
+}
+
+.bg-blue {
+    background-color: var(--blue);
+    background-color: blue;
+}
+
+* {
+    font-family: CeraRegular;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+ul {
+    padding-left: 0;
+    list-style-position: inside;
+    color: #757575;
+}
+
+    ul.list-gold {
+        list-style: none;
+    }
+
+        ul.list-gold li::before {
+            content: "\2022";
+            color: var(--gold);
+            display: inline-block;
+            width: 1em;
+            font-weight: 700;
+            font-size: 1.5em;
+        }
+
+p {
+    color: #757575;
+}
+
+.section-padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .paralax-nav-text {
@@ -176,21 +250,34 @@ p.paralax-footer-link-regular {
     font-family: "CeraMedium";
 }
 
-@font-face {
-    font-family: 'CeraBold';
-    src: url('../../../../../fonts/cera_pro_bold-webfont.woff') format('woff');
+.btn-parallex {
+    text-align: center;
+    border-radius: 5px;
+    font-size: inherit;
+    display: inline-block;
+    border-radius: 15px;
+    height: 50px;
 }
 
-@font-face {
-    font-family: 'CeraRegular';
-    src: url('../../../../../fonts/cera_pro_regular-webfont.woff') format('woff');
+.btn-parallex-primary {
+    background-color: var(--gold);
+    transition: background-color .5s;
+    color: white;
 }
 
-@font-face {
-    font-family: 'CeraMedium';
-    src: url('../../../../../fonts/cera_pro_medium-webfont.woff') format('woff');
-}
+    .btn-parallex-primary > span[class^="fa"] {
+        margin: 0 15px;
+    }
 
+    .btn-parallex-primary:hover {
+        background: var(--blue);
+        color: white;
+    }
+
+.btn-parallex-primary-outline {
+    color: var(--gold);
+    border: 1px solid var(--gold);
+}
 
 .paralax-card-img-top {
     width: 100%;
@@ -202,27 +289,8 @@ p.paralax-footer-link-regular {
     border-radius: 0.7rem !important;
 }
 
-.paralax-card-deck {
-    margin-right: 40px;
-    margin-left: 40px;
-}
-
 a.paralax-nav-barlink-font {
     color: #1F007D;
-}
-
-.paralex-margin {
-    margin-top: 60px;
-    margin-bottom: 40px;
-}
-
-@media (min-width: 576px) {
-    .paralax-card-deck {
-        flex-flow: wrap;
-        flex-direction: row;
-        margin-right: 40px;
-        margin-left: 40px;
-    }
 }
 
 a.header-font {
@@ -249,13 +317,6 @@ a.header-font {
 .paralax-app-dim {
     max-width: 311px;
     margin-right: 50px;
-}
-
-.paralex-margin {
-    margin-top: 60px;
-    margin-bottom: 40px;
-    margin-right: 0px;
-    margin-left: 0px
 }
 
 .paralax-header-container {
@@ -301,6 +362,135 @@ a.header-font {
 .paralex-card-title {
     margin-bottom: 1.75rem;
     margin-top: 7rem;
+}
+
+.header-title, .hero-title, title {
+    color: var(--gold);
+    font-weight: bold;
+    font-size: 3em;
+    line-height: 1em;
+    margin: 20px 0;
+}
+
+title-primary {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.hero-text {
+    color: #757575;
+}
+
+#carousel-section {
+    background-color: #F4F2F2 !important;
+}
+
+    #carousel-section .header-title {
+        margin: 15px 0;
+    }
+
+    #carousel-section .btn-parallex-primary {
+        padding-right: 15px;
+        padding-left: 15px;
+        display: inline-block;
+        width: 200px;
+        line-height: 15px;
+    }
+
+    #carousel-section .carousel-item {
+        height: 75vh;
+    }
+
+        #carousel-section .carousel-item > .container {
+            height: 75vh;
+            display: flex;
+            align-items: center;
+        }
+
+    #carousel-section ul {
+        margin: 30px 0;
+    }
+
+        #carousel-section ul li {
+            font-weight: 400;
+            font-size: 1.13em;
+        }
+
+    #carousel-section .carousel-item-1 {
+        background: transparent linear-gradient(91deg, #F4F2F2 0%, #F3F3F1 82%, #F4F3F200 100%) 0% 0% no-repeat padding-box;
+        background: url('../../../../../images/DSC_2662.png') no-repeat;
+        background-position: 110% top;
+        background-size: 50%;
+    }
+
+    #carousel-section .carousel-item-2 {
+        background: transparent linear-gradient(91deg, #F4F2F2 0%, #F3F3F1 82%, #F4F3F200 100%) 0% 0% no-repeat padding-box;
+        background: url('../../../../../images/DSC_2622.png') no-repeat;
+        background-position: 110% top;
+        /*background-size: 50%;*/
+    }
+
+    #carousel-section .carousel-item-3 {
+        background: transparent linear-gradient(91deg, #F4F2F2 0%, #F3F3F1 82%, #F4F3F200 100%) 0% 0% no-repeat padding-box;
+        background: url('../../../../../images/DSC_2795.png') no-repeat;
+        background-position: 110% top;
+        background-size: 50%;
+    }
+
+    #carousel-section .carousel-content {
+        width: 50%;
+        padding: 30px 0;
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+    }
+
+    #carousel-section .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-left: 5px;
+        margin-right: 5px;
+        border: 1px solid #ccc;
+    }
+
+    #carousel-section .carousel-control-next, .carousel-control-prev {
+        color: var(--blue);
+        width: 8%;
+    }
+
+    #carousel-section .carousel-control-prev-icon, .carousel-control-next-icon {
+        background-color: var(--blue);
+        height: 30px;
+        width: 30px;
+    }
+
+.card-deck p {
+    color: #757575;
+}
+
+.card-body {
+    padding: 2em;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding: 1rem 1.3rem;
+    font-size: 1.12em;
+    font-weight: 600;
+    color: #333 !important;
+}
+
+    .breadcrumb a {
+        font-weight: 600;
+        color: #333 !important;
+    }
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: '\003E';
+    font-weight: bold;
+    margin-right: 15px;
+}
 }
 
 .paralex-margin-inner-pages {
