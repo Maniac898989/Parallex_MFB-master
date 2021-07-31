@@ -1,0 +1,53 @@
+﻿@import url('../lib/bootstrap/dist/css/custom/custom.css');
+
+#about-us-hero {
+    background-color: grey;
+    background-position: center;
+    background-image: url('../images/boardroom.png');
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+    #about-us-hero > .container > .row {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        height: 320px;
+        justify-content:center;
+    }
+
+    #about-us-hero h1.title {
+        font-weight: bold;
+        font-size: 69px;
+        display: block;
+        color: white;
+    }
+
+.values {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+    .values .item {
+        width: 25%;
+        height: 250px;
+        background-color: var(--gold);
+        color: #333;
+        display: flex;
+        font-size: 1.4em;
+        font-weight: bold;
+        padding: 20px;
+        align-items: center;
+        border-radius: 15px;
+    }
+
+        .values .item:hover {
+            color: var(--gold);
+        }
+
+.value-section {
+    min-height: 1000px;
+    max-height: 1550px;
+}
