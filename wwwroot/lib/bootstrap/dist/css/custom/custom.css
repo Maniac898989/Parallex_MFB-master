@@ -61,20 +61,58 @@ a.paralax-navbar-brand {
 .paralax-btn-outline-transparent {
     color: #FFF;
     border-color: #FFF;
+    border-radius: 0.5rem;
 }
 
 .paralax-btn-outline-yellow {
     color: #FFF;
     border-color: #da9c04;
     background-color: #da9c04;
+    border-radius: 0.5rem;
+}
+
+.paralax-btn-outline-yellow-body {
+    color: #FFF;
+    border-color: #da9c04;
+    background-color: #da9c04;
+    border-radius: 0.5rem;
+}
+
+.paralax-btn-outline-yellow-body:hover {
+    color: #FFF;
+    text-decoration: none;
+    background-color: #001B71;
+    border-color: #001B71;
+}
+
+.paralax-btn-outline-yellow:hover {
+    color: #da9c04;
+    text-decoration: none;
+    background-color: #FFF;
+    border-color: #FFF;
+}
+
+.paralax-btn-outline-transparent:hover {
+    color: #da9c04;
+    text-decoration: none;
+    background-color: #FFF;
+    border-color: #FFF;
 }
 
 .paralax-btn-outline-yellow-reverse {
     color: #da9c04;
     border-color: #da9c04;
     background-color: #FFF;
+    border: 2.1px solid;
+    border-radius:0.5rem;
 }
 
+.paralax-btn-outline-yellow-reverse:hover {
+    color: #da9c04;
+    text-decoration: none;
+    background-color: #FFEEC9;
+    border-color: #da9c04;
+}
 
 .paralax-justify-items {
     display: flex;
@@ -97,7 +135,6 @@ a.paralax-navbar-brand {
 .inner-page-header-font {
     font-size: 40px;
     font-family: "CeraBold";
-   
 }
 
 .header-font-card {
@@ -131,7 +168,7 @@ p.paralax-footer-link-regular {
 .paralax-body-font-two {
     font-size: 0.9rem;
     font-family: "CeraRegular";
-    margin:21px;
+    margin: 21px;
 }
 
 .paralax-nav-barlink-font {
@@ -232,6 +269,7 @@ a.header-font {
     height: 310px;
 }
 
+
 .paralax-header-text {
     position: absolute;
     color: #FFF;
@@ -256,11 +294,43 @@ a.header-font {
     padding-top: 30px;
 }
 
-.paralex-card-text:last-child{
-    margin:30px
+.paralex-card-text:last-child {
+    margin: 30px
 }
 
-.paralex-card-title{
+.paralex-card-title {
     margin-bottom: 1.75rem;
     margin-top: 7rem;
+}
+
+.paralex-margin-inner-pages {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-left: 66px;
+}
+
+.header-font-card-bullet {
+    font-size: 25px;
+    font-family: "CeraBold";
+    font-weight: bold;
+    color: #DA9C04
+}
+
+li.paralax-body-font {
+    color: #000000;
+    font-size: 1rem;
+    font-family: "CeraRegular";
+}
+
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: #ff6a00
+}
+
+.card-footer {
+    background-color: transparent;
+    border-top: 0px;
+    margin-bottom: 12px;
+    font-family: "CeraBold"
 }
