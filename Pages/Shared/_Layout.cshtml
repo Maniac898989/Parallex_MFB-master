@@ -13,7 +13,7 @@
     <header>
         <nav class="navbar navbar-expand-lg" style="background-color: #1F007D">
             <a class="navbar-brand" href="#">
-               <img src="~/images/PARALLEX BANK NEW LOGO.svg" width="30" height="30" alt="">
+               <img src="~/images/Logo.png" width="170" height="47" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,8 +22,8 @@
             <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
                 
                 <div class="ml-auto">
-                    <button class="btn paralax-btn-outline-yellow btn-lg my-2 my-sm-0">Open Account</button>
-                    <button class="btn paralax-btn-outline-transparent btn-lg my-2 my-sm-0">Internet Banking</button>
+                    <button class="btn paralax-btn-outline-yellow btn-lg my-2 my-sm-0 paralax-nav-barlink-font">Open Account</button>
+                    <button class="btn paralax-btn-outline-transparent btn-lg my-2 my-sm-0 paralax-nav-barlink-font">Internet Banking <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
 
                 </div>
 
@@ -84,17 +84,54 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div class="container-fluid">
+        <main role="main">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - Parallex_MFB - <a asp-area="" asp-page="/Privacy">Privacy</a>
+    
+    <footer class="paralax-foooter footer-font-bold">
+        <div class="container-fluid" style=" background-color: #1F007D">
+
+            <div class="row col-md-12 ml-auto "style="padding-top:100px">
+                <div class="col-md-3">
+                    <div>
+                        <img src="~/images/Logo.png" style="max-width:205px"/>
+                        </div>
+                    <img src="~/images/Footer Background Logo.png" style="max-width:260px" />
+                </div>
+                <div class="col-md-2">
+                    <p>Personal Banking</p>
+                    <p><a class="paralax-footer-link-regular" href="#">Account</a></p>
+                    <p><a class="paralax-footer-link-regular" href="#">Cards</a></p>
+                    <p><a class="paralax-footer-link-regular" href="#">More On Products && Services</a></p>
+                    <p><a class="paralax-footer-link-regular" href="#">Loans</a></p>
+                </div>
+                <div class="col-md-2">
+                    <p>Business Banking</p>
+                    <p><a class="paralax-footer-link-regular" href="#">Business Accounts</a></p>
+                </div>
+                <div class="col-md-auto">
+                    <p>About Us</p>
+                    <p><a class="paralax-footer-link-regular" href="#">Vision/Mission, Values</a></p>
+                    <p><a class="paralax-footer-link-regular" href="#">Company Profile</a></p>
+                    <p><a class="paralax-footer-link-regular" href="#">Board of Directors</a></p>
+                    <p><a class="paralax-footer-link-regular" href="#">Exco Members</a></p>
+                </div>
+                <div class="col-md-auto">
+                    <p>Contact Us</p>
+                    <p class="paralax-footer-link-regular">Plot 1261, Adeola Hopewell Street, V.I, Lagos</p>
+                    <p class="paralax-footer-link-regular">customercare@parallexbankng.com</p>
+                    <p class="paralax-footer-link-regular">0700 727 25539</p>
+                    <p class="paralax-footer-link-regular">0912 180 4317</p>
+                    <p class="paralax-footer-link-regular">0912 192 1226</p>
+                    <p class="paralax-footer-link-regular">0912 272 2067</p>
+                </div>
+            </div>
         </div>
     </footer>
+    
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
