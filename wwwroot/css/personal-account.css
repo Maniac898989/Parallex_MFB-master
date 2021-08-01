@@ -12,7 +12,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
 }
 
 .hero-content {
@@ -20,6 +20,6 @@
     padding: 30px 0;
 }
 
-.gold-title{
+.gold-title {
     margin: 20px 0;
 }
