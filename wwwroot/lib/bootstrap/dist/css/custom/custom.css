@@ -135,20 +135,58 @@ a.paralax-navbar-brand {
 .paralax-btn-outline-transparent {
     color: #FFF;
     border-color: #FFF;
+    border-radius: 0.5rem;
 }
 
 .paralax-btn-outline-yellow {
     color: #FFF;
     border-color: #da9c04;
     background-color: #da9c04;
+    border-radius: 0.5rem;
+}
+
+.paralax-btn-outline-yellow-body {
+    color: #FFF;
+    border-color: #da9c04;
+    background-color: #da9c04;
+    border-radius: 0.5rem;
+}
+
+.paralax-btn-outline-yellow-body:hover {
+    color: #FFF;
+    text-decoration: none;
+    background-color: #001B71;
+    border-color: #001B71;
+}
+
+.paralax-btn-outline-yellow:hover {
+    color: #da9c04;
+    text-decoration: none;
+    background-color: #FFF;
+    border-color: #FFF;
+}
+
+.paralax-btn-outline-transparent:hover {
+    color: #da9c04;
+    text-decoration: none;
+    background-color: #FFF;
+    border-color: #FFF;
 }
 
 .paralax-btn-outline-yellow-reverse {
     color: #da9c04;
     border-color: #da9c04;
     background-color: #FFF;
+    border: 2.1px solid;
+    border-radius:0.5rem;
 }
 
+.paralax-btn-outline-yellow-reverse:hover {
+    color: #da9c04;
+    text-decoration: none;
+    background-color: #FFEEC9;
+    border-color: #da9c04;
+}
 
 .paralax-justify-items {
     display: flex;
@@ -291,6 +329,7 @@ a.header-font {
     object-fit: cover;
     height: 310px;
 }
+
 
 .paralax-header-text {
     position: absolute;
