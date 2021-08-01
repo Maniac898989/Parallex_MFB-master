@@ -2,10 +2,11 @@
 @import url('../lib/bootstrap/dist/css/custom/custom.css');
 
 #personal_account {
-    background-image: url('../images/boardroom.png');
+    background: transparent linear-gradient(91deg, #F4F2F2 0%, #F3F3F1 82%, #F4F3F200 100%) 0% 0% no-repeat padding-box;
+    background-image: url('../images/DSC_2910 (1).jpg');
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: 89% top;
+    background-size: 100%;
 }
 
 .hero-image {
