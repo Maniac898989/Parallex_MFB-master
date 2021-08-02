@@ -53,18 +53,20 @@ html, body {
     color: #757575;
 }*/
 
-    ul.list-gold {
-        list-style: none;
-    }
+ul.list-gold {
+    list-style: none;
+    font-family: CeraRegular
+}
 
-        ul.list-gold li::before {
-            content: "\2022";
-            color: var(--gold);
-            display: inline-block;
-            width: 1em;
-            font-weight: 700;
-            font-size: 1.5em;
-        }
+    ul.list-gold li::before {
+        content: "\2022";
+        color: var(--gold);
+        display: inline-block;
+        width: 1em;
+        font-weight: 700;
+        font-size: 1.5em;
+        font-family:CeraRegular
+    }
 
 
 
@@ -150,12 +152,12 @@ a.paralax-navbar-brand {
     border-radius: 0.5rem;
 }
 
-.paralax-btn-outline-yellow-body:hover {
-    color: #FFF;
-    text-decoration: none;
-    background-color: #001B71;
-    border-color: #001B71;
-}
+    .paralax-btn-outline-yellow-body:hover {
+        color: #FFF;
+        text-decoration: none;
+        background-color: #001B71;
+        border-color: #001B71;
+    }
 
 .paralax-btn-outline-yellow:hover {
     color: #da9c04;
@@ -176,15 +178,15 @@ a.paralax-navbar-brand {
     border-color: #da9c04;
     background-color: #FFF;
     border: 2.1px solid;
-    border-radius:0.5rem;
+    border-radius: 0.5rem;
 }
 
-.paralax-btn-outline-yellow-reverse:hover {
-    color: #da9c04;
-    text-decoration: none;
-    background-color: #FFEEC9;
-    border-color: #da9c04;
-}
+    .paralax-btn-outline-yellow-reverse:hover {
+        color: #da9c04;
+        text-decoration: none;
+        background-color: #FFEEC9;
+        border-color: #da9c04;
+    }
 
 .paralax-justify-items {
     display: flex;
@@ -213,6 +215,12 @@ a.paralax-navbar-brand {
 .inner-page-header-font {
     font-size: 40px;
     font-family: "CeraBold";
+}
+
+.inner-page-header-font-orange {
+    font-size: 30px;
+    font-family: "CeraBold";
+    color: #da9c04;
 }
 
 .header-font-card {
@@ -279,6 +287,7 @@ p.paralax-footer-link-regular {
     background-color: var(--gold);
     transition: background-color .5s;
     color: white;
+    font-family:CeraBold
 }
 
     .btn-parallex-primary > span[class^="fa"] {
@@ -396,6 +405,7 @@ title-primary {
 
 .hero-text {
     color: #757575;
+    font-family: 'CeraMedium';
 }
 
 #carousel-section {
@@ -430,9 +440,9 @@ title-primary {
     }
 
         #carousel-section ul li {
-            font-weight:lighter;
+            font-weight: lighter;
             font-size: 1em;
-            font-family: CeraMedium;
+            font-family: "CeraMedium";
             color: #3D3D3D
         }
 
@@ -480,9 +490,9 @@ title-primary {
     }
 
     #carousel-section .carousel-control-prev-icon, .carousel-control-next-icon {
-        
         height: 30px;
         width: 30px;
+        
     }
 
 .card-deck p {
@@ -548,4 +558,38 @@ li.paralax-body-font {
     border-top: 0px;
     margin-bottom: 12px;
     font-family: "CeraBold"
+}
+
+.hr-footer {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 0.5px solid #F3F3F1;
+}
+
+.footer-gold-text {
+    color: #DA9C04;
+    font-size: .9rem;
+    font-family: "CeraRegular";
+}
+
+    .footer-gold-text:hover {
+        color: #FFF;
+        text-decoration: underline
+    }
+
+.paralax-footer-font {
+    font-size: 0.7rem;
+    font-family: CeraLight;
+    color: #FFF;
+}
+
+    .paralax-footer-font:hover {
+        color: #DA9C04;
+        text-decoration: underline;
+    }
+
+.paralax-footer-link-regular:hover {
+    color: #DA9C04;
+    text-decoration: underline
 }
