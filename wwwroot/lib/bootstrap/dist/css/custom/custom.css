@@ -152,12 +152,12 @@ a.paralax-navbar-brand {
     border-radius: 0.5rem;
 }
 
-.paralax-btn-outline-yellow-body:hover {
-    color: #FFF;
-    text-decoration: none;
-    background-color: #001B71;
-    border-color: #001B71;
-}
+    .paralax-btn-outline-yellow-body:hover {
+        color: #FFF;
+        text-decoration: none;
+        background-color: #001B71;
+        border-color: #001B71;
+    }
 
 .paralax-btn-outline-yellow:hover {
     color: #da9c04;
@@ -178,21 +178,42 @@ a.paralax-navbar-brand {
     border-color: #da9c04;
     background-color: #FFF;
     border: 2.1px solid;
-    border-radius:0.5rem;
+    border-radius: 0.5rem;
 }
 
-.paralax-btn-outline-yellow-reverse:hover {
-    color: #da9c04;
-    text-decoration: none;
-    background-color: #FFEEC9;
-    border-color: #da9c04;
-}
+    .paralax-btn-outline-yellow-reverse:hover {
+        color: #da9c04;
+        text-decoration: none;
+        background-color: #FFEEC9;
+        border-color: #da9c04;
+    }
 
 .paralax-justify-items {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px;
+}
+
+
+.paralax-card-deck .paralax-btn-outline-yellow-reverse {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.paralax-card-deck .card-footer {
+    background-color: transparent;
+    border: none;
+    padding-bottom: 30px;
+}
+
+#account-heading {
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-family: CeraBold;
+    color: #333;
 }
 
 .paralax-i-arrow {
@@ -299,12 +320,8 @@ a.header-font {
 }
 
 .paralax-foooter {
-    position: relative;
     width: 100%;
-    bottom: 0;
-    white-space: nowrap;
-    line-height: 23px;
-    height: 2em;
+    background-color: #1F007D;
 }
 
 .paralax-footer-row {
